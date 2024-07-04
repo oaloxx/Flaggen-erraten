@@ -259,7 +259,7 @@ namespace mohdKhair
             {
 
                 weite.Text = "Ende";
-                MessageBox.Show($"ergebniss : {label1.Text} Das Ende, Wenn Sie wieder Spielen möchten dann Klicken Sie auf die Kontinente, wo Sie spielen möchten.");
+                MessageBox.Show($"ergebniss : {label1.Text} Das Ende, Wenn Sie wieder Spielen mÃ¶chten dann Klicken Sie auf die Kontinente, wo Sie spielen mÃ¶chten.");
                 a = 0;
 
 
@@ -301,7 +301,7 @@ namespace mohdKhair
             }
             else
             {
-                // Bestehende Logik für andere Spielmodi
+                // Bestehende Logik fÃ¼r andere Spielmodi
                 if (laenderList != null && laenderList.Count > 0)
                 {
                     if (laenderList[0].Name == Wahl1.Text || laenderList[0].Hauptstadt1 == Wahl1.Text)
@@ -343,7 +343,7 @@ namespace mohdKhair
             }
             else
             {
-                // Bestehende Logik für andere Spielmodi
+                // Bestehende Logik fÃ¼r andere Spielmodi
                 if (laenderList != null && laenderList.Count > 0)
                 {
                     if (laenderList[0].Name == Wahl2.Text || laenderList[0].Hauptstadt1 == Wahl2.Text)
@@ -385,7 +385,7 @@ namespace mohdKhair
             }
             else
             {
-                // Bestehende Logik für andere Spielmodi
+                // Bestehende Logik fÃ¼r andere Spielmodi
                 if (laenderList != null && laenderList.Count > 0)
                 {
                     if (laenderList[0].Name == Wahl3.Text || laenderList[0].Hauptstadt1 == Wahl3.Text)
@@ -427,7 +427,7 @@ namespace mohdKhair
             }
             else
             {
-                // Bestehende Logik für andere Spielmodi
+                // Bestehende Logik fÃ¼r andere Spielmodi
                 if (laenderList != null && laenderList.Count > 0)
                 {
                     if (laenderList[0].Name == Wahl4.Text || laenderList[0].Hauptstadt1 == Wahl4.Text)
@@ -480,13 +480,14 @@ namespace mohdKhair
 
 
             panel1.Visible = true;
+            pictureBox1.Visible = true;
 
             laenderList = db.GetLaender();
             clearButtons();
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -509,6 +510,7 @@ namespace mohdKhair
         {
 
             Land.Visible = false;
+            pictureBox1.Visible = true;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.Gold;
@@ -539,7 +541,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -563,6 +565,7 @@ namespace mohdKhair
         {
 
             Land.Visible = false;
+            pictureBox1.Visible = true;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -593,7 +596,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -617,6 +620,7 @@ namespace mohdKhair
         {
 
             Land.Visible = false;
+            pictureBox1.Visible = true;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -647,7 +651,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -670,6 +674,7 @@ namespace mohdKhair
         private void Australien_Click(object sender, EventArgs e)
         {
             Land.Visible = false;
+            pictureBox1.Visible = true;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -700,7 +705,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -723,6 +728,7 @@ namespace mohdKhair
         private void sudamerka_Click(object sender, EventArgs e)
         {
             Land.Visible = false;
+            pictureBox1.Visible = true;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -753,7 +759,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -776,6 +782,7 @@ namespace mohdKhair
         private void Weltweit_Click(object sender, EventArgs e)
         {
             Land.Visible = false;
+            pictureBox1.Visible = true;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -806,7 +813,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -838,6 +845,7 @@ namespace mohdKhair
         {
 
             Land.Visible = false;
+            pictureBox1.Visible = true;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -868,7 +876,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -892,6 +900,7 @@ namespace mohdKhair
         {
 
             Land.Visible = false;
+            pictureBox1.Visible = true;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -922,7 +931,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -947,6 +956,7 @@ namespace mohdKhair
         {
 
             Land.Visible = false;
+            pictureBox1.Visible = true;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -977,7 +987,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -1001,6 +1011,7 @@ namespace mohdKhair
         {
 
             Land.Visible = false;
+            pictureBox1.Visible = true;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -1031,7 +1042,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -1055,6 +1066,7 @@ namespace mohdKhair
         {
 
             Land.Visible = false;
+            pictureBox1.Visible = true;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -1085,7 +1097,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -1110,6 +1122,7 @@ namespace mohdKhair
         private void europa_hauptstaedte_Click(object sender, EventArgs e)
         {
             Land.Visible = false;
+            pictureBox1.Visible = true;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -1140,7 +1153,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -1164,6 +1177,7 @@ namespace mohdKhair
         {
 
             Land.Visible = false;
+            pictureBox1.Visible = true;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -1194,7 +1208,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -1255,7 +1269,7 @@ namespace mohdKhair
             Austraarin_flagge.BackColor = Color.White;
             Weltweit_flagge.BackColor = Color.White;
 
-
+            pictureBox1.Visible = false;
             panel1.Visible = true;
 
             laenderList = db.GetRichtigeFlagge();
@@ -1263,7 +1277,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -1286,6 +1300,7 @@ namespace mohdKhair
         private void Europa_flagge_Click_1(object sender, EventArgs e)
         {
             Land.Visible = true;
+            pictureBox1.Visible = false;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -1317,7 +1332,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -1340,6 +1355,7 @@ namespace mohdKhair
         private void Nordamerika_fagge_Click(object sender, EventArgs e)
         {
             Land.Visible = true;
+            pictureBox1.Visible = false;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -1371,7 +1387,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -1394,6 +1410,7 @@ namespace mohdKhair
         private void sudamerika_flagge_Click(object sender, EventArgs e)
         {
             Land.Visible = true;
+            pictureBox1.Visible = false;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -1425,7 +1442,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -1448,7 +1465,7 @@ namespace mohdKhair
         private void Asien_flagge_Click(object sender, EventArgs e)
         {
             Land.Visible = true;
-
+            pictureBox1.Visible = false;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -1480,7 +1497,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -1503,7 +1520,7 @@ namespace mohdKhair
         private void Austraarin_flagge_Click(object sender, EventArgs e)
         {
             Land.Visible = true;
-
+            pictureBox1.Visible = false;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -1535,7 +1552,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
@@ -1558,7 +1575,7 @@ namespace mohdKhair
         private void Weltweit_flagge_Click(object sender, EventArgs e)
         {
             Land.Visible = true;
-
+            pictureBox1.Visible = false;
 
             Europa.BackColor = Color.White;
             Afrika.BackColor = Color.White;
@@ -1590,7 +1607,7 @@ namespace mohdKhair
 
             if (laenderList == null || laenderList.Count == 0)
             {
-                MessageBox.Show("Keine Länder gefunden.");
+                MessageBox.Show("Keine LÃ¤nder gefunden.");
                 return;
             }
 
